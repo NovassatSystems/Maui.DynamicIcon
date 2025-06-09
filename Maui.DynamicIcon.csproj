@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net9.0-android</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+
+    <!-- Pacote NuGet -->
+    <PackageId>NovassatSystems.Maui.DynamicIcon</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Peter Novassat</Authors>
+    <Company>Novassat Systems</Company>
+    <Description>Dynamic launcher icon switching for .NET MAUI (Android-only).</Description>
+    <PackageTags>maui, icon, launcher, dynamic, android</PackageTags>
+    <RepositoryUrl>https://github.com/NovassatSystems/Maui.DynamicIcon</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+    <!-- Isso evita o warning MA002 -->
+    <SkipValidateMauiImplicitPackageReferences>true</SkipValidateMauiImplicitPackageReferences>
+  </PropertyGroup>
+
+  <!-- Dependência explícita mínima para usar Hosting -->
+
+</Project>
