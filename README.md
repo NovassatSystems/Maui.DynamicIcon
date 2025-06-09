@@ -179,7 +179,7 @@ Sinta-se à vontade para abrir issues, enviar pull requests ou sugerir melhorias
 ## 📬 Contato
 
 Tem dúvidas ou sugestões?  
-Entre em contato comigo por [LinkedIn](https://www.linkedin.com) ou abra uma issue no repositório.
+Entre em contato comigo por [LinkedIn](https://www.linkedin.com/in/PeterNovassat) ou abra uma issue no repositório.
 
 ---
 

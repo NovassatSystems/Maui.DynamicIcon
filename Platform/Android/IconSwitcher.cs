@@ -14,7 +14,6 @@ public static class IconSwitcher
         var pm = context.PackageManager!;
         var mainComponent = new ComponentName(context, Java.Lang.Class.FromType(mainActivityType).Name);
 
-        // Desativa MainActivity
         pm.SetComponentEnabledSetting(mainComponent, ComponentEnabledState.Disabled, ComponentEnableOption.DontKillApp);
 
         foreach (var alias in knownAliases)
