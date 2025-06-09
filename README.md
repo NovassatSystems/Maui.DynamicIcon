@@ -2,7 +2,7 @@
 ![.NET MAUI](https://img.shields.io/badge/-MAUI-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![C#](https://img.shields.io/badge/-C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![Android](https://img.shields.io/badge/-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-[![NuGet](https://img.shields.io/nuget/v/Novassat.DynamicIcon.svg)](https://www.nuget.org/packages/Novassat.DynamicIcon)
+[![NuGet](https://img.shields.io/nuget/v/Novassat.DynamicIcon.svg)](https://www.nuget.org/packages/NovassatSystems.Maui.DynamicIcon)
 
 
 
@@ -20,7 +20,7 @@
 1. Adicione o pacote NuGet ao seu projeto Android MAUI:
 
    ```bash
-   dotnet add package Maui.DynamicIcon
+   dotnet add package NovassatSystems.Maui.DynamicIcon
    ```
 
 2. No seu `MauiProgram.cs`, registre o plugin informando os aliases disponíveis:
