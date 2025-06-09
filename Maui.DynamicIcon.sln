@@ -5,8 +5,6 @@ VisualStudioVersion = 17.14.36109.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui.DynamicIcon", "Maui.DynamicIcon.csproj", "{17FD9047-02C3-4325-ADAC-0FF6CF68259F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui.DynamicIcon.Sample", "..\Maui.DynamicIcon.Sample\Maui.DynamicIcon.Sample.csproj", "{42751871-4B3A-44B0-9E8A-3263CD780EA9}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{17FD9047-02C3-4325-ADAC-0FF6CF68259F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17FD9047-02C3-4325-ADAC-0FF6CF68259F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17FD9047-02C3-4325-ADAC-0FF6CF68259F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{42751871-4B3A-44B0-9E8A-3263CD780EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{42751871-4B3A-44B0-9E8A-3263CD780EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{42751871-4B3A-44B0-9E8A-3263CD780EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{42751871-4B3A-44B0-9E8A-3263CD780EA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
