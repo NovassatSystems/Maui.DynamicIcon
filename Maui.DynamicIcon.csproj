@@ -1,15 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net9.0-android</TargetFrameworks>
-    <UseMaui>true</UseMaui>
+    <TargetFrameworks>net9.0-android;net9.0-ios</TargetFrameworks>
+    <!--<UseMaui>true</UseMaui>-->
     <Nullable>enable</Nullable>
     <OutputType>Library</OutputType>
     <PackageId>NovassatSystems.Maui.DynamicIcon</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
     <Authors>Peter Novassat</Authors>
     <Company>Novassat Systems</Company>
-    <Description>Dynamic launcher icon switching for .NET MAUI (Android-only).</Description>
+    <Description>Dynamic launcher icon switching for .NET MAUI.</Description>
     <PackageTags>maui, icon, launcher, dynamic, android</PackageTags>
     <RepositoryUrl>https://github.com/NovassatSystems/Maui.DynamicIcon</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

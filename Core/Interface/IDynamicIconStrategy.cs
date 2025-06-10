@@ -1,6 +1,4 @@
-﻿#if ANDROID
-#endif
-namespace Maui.DynamicIcon;
+﻿namespace Maui.DynamicIcon;
 
 public interface IDynamicIconStrategy
 {

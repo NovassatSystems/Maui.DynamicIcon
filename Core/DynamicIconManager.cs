@@ -1,73 +1,28 @@
-﻿
-#if ANDROID
-using Android.Content;
-using Android.Content.PM;
-#endif
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Threading.Tasks;
 
 namespace Maui.DynamicIcon;
 
-public class DynamicIconManager
+public class DynamicIconManager(IDynamicIconService service)
 {
-    private readonly Context _context;
-    private readonly string _mainActivityClassName;
-    private readonly List<string> _knownAliases;
-
-    public DynamicIconManager(Context context, Type mainActivityType, IEnumerable<string> knownAliases)
-    {
-        _context = context ?? throw new ArgumentNullException(nameof(context));
-        _mainActivityClassName = Java.Lang.Class.FromType(mainActivityType).Name;
-        _knownAliases = knownAliases.ToList();
-    }
-
-    private IDynamicIconStrategy? _strategy;
+    readonly IDynamicIconService _service = service;
+    IDynamicIconStrategy? _strategy;
 
     public void SetStrategy(IDynamicIconStrategy strategy) => _strategy = strategy;
 
-    public void ApplyStrategy()
+    public async Task<bool> ApplyStrategyAsync()
     {
-        var alias = _strategy?.GetNextIconAlias();
-        if (!string.IsNullOrEmpty(alias))
-            SetIcon(alias);
+        var nextAlias = _strategy?.GetNextIconAlias();
+        if (!string.IsNullOrWhiteSpace(nextAlias))
+            return await _service.SetIconAsync(nextAlias);
+
+        return false;
     }
 
-    public void SetAliasOnce(string alias)
+    public Task<bool> SetAliasOnceAsync(string alias)
     {
         SetStrategy(new StaticAliasStrategy(alias));
-        ApplyStrategy();
+        return ApplyStrategyAsync();
     }
 
-    public void ResetToDefault()
-    {
-        var pm = _context.PackageManager!;
-        var mainComponent = new ComponentName(_context, _mainActivityClassName);
-
-        // Desativa todos os aliases
-        foreach (var alias in _knownAliases)
-        {
-            var aliasComponent = new ComponentName(_context, $"{_context.PackageName}.{alias}");
-            pm.SetComponentEnabledSetting(aliasComponent, ComponentEnabledState.Disabled, ComponentEnableOption.DontKillApp);
-        }
-
-        // Ativa MainActivity
-        pm.SetComponentEnabledSetting(mainComponent, ComponentEnabledState.Enabled, ComponentEnableOption.DontKillApp);
-    }
-
-    private void SetIcon(string aliasToActivate)
-    {
-        var pm = _context.PackageManager!;
-
-        // Desativa MainActivity
-        var main = new ComponentName(_context, _mainActivityClassName);
-        pm.SetComponentEnabledSetting(main, ComponentEnabledState.Disabled, ComponentEnableOption.DontKillApp);
-
-        foreach (var alias in _knownAliases)
-        {
-            var component = new ComponentName(_context, $"{_context.PackageName}.{alias}");
-            var newState = alias == aliasToActivate ? ComponentEnabledState.Enabled : ComponentEnabledState.Disabled;
-            pm.SetComponentEnabledSetting(component, newState, ComponentEnableOption.DontKillApp);
-        }
-    }
+    public Task<bool> ResetToDefaultAsync() => _service.SetIconAsync(null);
 }
