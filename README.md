@@ -4,6 +4,8 @@
 ![Android](https://img.shields.io/badge/-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white) 
 ![iOS](https://img.shields.io/badge/-iOS-000000?style=for-the-badge&logo=apple&logoColor=white)
 
+📘 Este README também está disponível em: [🇺🇸 English](docs/README.en.md)
+
 # Maui.DynamicIcon
 
 **Maui.DynamicIcon** é um plugin leve e extensível para .NET MAUI que permite **trocar dinamicamente o ícone do app** em tempo de execução, utilizando `activity-alias` no Android e suporte completo no iOS.
