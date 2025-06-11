@@ -4,7 +4,7 @@
 ![Android](https://img.shields.io/badge/-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white) 
 ![iOS](https://img.shields.io/badge/-iOS-000000?style=for-the-badge&logo=apple&logoColor=white)
 
-📘 Este README também está disponível em: [🇺🇸 English](docs/README.en.md)
+📘 This README is also available in: [🇺🇸 English](docs/README.en.md)
 
 # Maui.DynamicIcon
 
