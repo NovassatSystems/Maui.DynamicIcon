@@ -19,16 +19,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <AndroidJavaSource Remove="docs\**" />
     <AndroidJavaSource Remove="Sample\**" />
+    <AndroidLibrary Remove="docs\**" />
     <AndroidLibrary Remove="Sample\**" />
+    <AndroidNativeLibrary Remove="docs\**" />
     <AndroidNativeLibrary Remove="Sample\**" />
+    <Compile Remove="docs\**" />
     <Compile Remove="Sample\**" />
+    <EmbeddedResource Remove="docs\**" />
     <EmbeddedResource Remove="Sample\**" />
+    <JavaSourceJar Remove="docs\**" />
     <JavaSourceJar Remove="Sample\**" />
     <MauiCss Remove="Sample\**" />
     <MauiXaml Remove="Sample\**" />
+    <None Remove="docs\**" />
     <None Remove="Sample\**" />
+    <ProguardConfiguration Remove="docs\**" />
     <ProguardConfiguration Remove="Sample\**" />
+    <TransformFile Remove="docs\**" />
     <TransformFile Remove="Sample\**" />
   </ItemGroup>
   <ItemGroup>
