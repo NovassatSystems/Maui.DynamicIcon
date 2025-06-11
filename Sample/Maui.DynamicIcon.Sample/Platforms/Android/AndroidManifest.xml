@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+	<application android:allowBackup="true" android:icon="@mipmap/appicon" android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true">
+
+    <activity android:name="crc64277e6442a1cfdb46.MainActivity"
+          android:exported="true"
+          android:theme="@style/Maui.SplashTheme"
+          android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|uiMode"
+          android:launchMode="singleTop"
+          android:windowSoftInputMode="adjustResize">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      
+      <activity-alias
+              android:name=".Icon1"
+              android:enabled="true"
+              android:exported="true"
+              android:icon="@mipmap/icon1"
+              android:targetActivity="crc64277e6442a1cfdb46.MainActivity">
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity-alias>
+
+      <activity-alias
+          android:name=".Icon2"
+          android:enabled="false"
+          android:exported="true"
+          android:icon="@mipmap/icon2"
+          android:targetActivity="crc64277e6442a1cfdb46.MainActivity">
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity-alias>
+
+      <activity-alias
+          android:name=".Icon3"
+          android:enabled="false"
+          android:exported="true"
+          android:icon="@mipmap/icon3"
+          android:targetActivity="crc64277e6442a1cfdb46.MainActivity">
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity-alias>
+
+      <service
+          android:name=".Services.IconChangerService"
+          android:exported="false"
+          android:foregroundServiceType="dataSync" />
+    </activity>
+  </application>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+</manifest>

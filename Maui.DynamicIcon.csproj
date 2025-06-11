@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <OutputType>Library</OutputType>
     <PackageId>NovassatSystems.Maui.DynamicIcon</PackageId>
-    <Version>1.1.0</Version>
+    <Version>1.1.2</Version>
     <Authors>Peter Novassat</Authors>
     <Company>Novassat Systems</Company>
     <Description>Dynamic launcher icon switching for .NET MAUI.</Description>
@@ -17,6 +17,20 @@
     <PackageIcon>ns_icon.png</PackageIcon>
     <SkipValidateMauiImplicitPackageReferences>true</SkipValidateMauiImplicitPackageReferences>
   </PropertyGroup>
+
+  <ItemGroup>
+    <AndroidJavaSource Remove="Sample\**" />
+    <AndroidLibrary Remove="Sample\**" />
+    <AndroidNativeLibrary Remove="Sample\**" />
+    <Compile Remove="Sample\**" />
+    <EmbeddedResource Remove="Sample\**" />
+    <JavaSourceJar Remove="Sample\**" />
+    <MauiCss Remove="Sample\**" />
+    <MauiXaml Remove="Sample\**" />
+    <None Remove="Sample\**" />
+    <ProguardConfiguration Remove="Sample\**" />
+    <TransformFile Remove="Sample\**" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="ns_icon.png" Pack="true" PackagePath="\" />
   </ItemGroup>
