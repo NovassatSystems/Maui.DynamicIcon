@@ -1,11 +1,11 @@
-📘 Este README também está disponível em: [🇧🇷 Portuguese](../README.md)
-
 ![MADE WITH LOVE](https://img.shields.io/badge/Made_with_Love-Build_with-000000?style=for-the-badge) 
 ![.NET MAUI](https://img.shields.io/badge/-MAUI-512BD4?style=for-the-badge&logo=dotnet&logoColor=white) 
 ![C#](https://img.shields.io/badge/-C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) 
 ![Android](https://img.shields.io/badge/-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white) 
 ![iOS](https://img.shields.io/badge/-iOS-000000?style=for-the-badge&logo=apple&logoColor=white)
 [![NuGet](https://img.shields.io/nuget/v/NovassatSystems.Maui.DynamicIcon.svg)](https://www.nuget.org/packages/NovassatSystems.Maui.DynamicIcon)
+
+📘 Este README também está disponível em: [🇧🇷 Portuguese](../README.md)
 
 # Maui.DynamicIcon
 
