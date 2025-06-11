@@ -30,7 +30,7 @@ dotnet add package NovassatSystems.Maui.DynamicIcon
 ### 2. Ative o plugin no `MauiProgram.cs`, informando os aliases disponíveis:
 
 ```csharp
-builder.UseDynamicIcon("Icon1Alias", "Icon2Alias", "Icon3Alias");
+builder.UseDynamicIcon("Icon1", "Icon2", "Icon3");
 ```
 
 ---
